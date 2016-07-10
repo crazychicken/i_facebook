@@ -1,0 +1,27 @@
+{
+  "name": "i_facebook",
+  "title": "html/css",
+  "url": "git@github.com:crazychicken/i_facebook.git",
+  "description": "HTML CSS LIST ICONS FEED FACEBOOK",
+  "version": "1.0.0",
+  "keyworeds": [
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crazychicken/i_facebook.git"
+  },
+  "homepage": "http://tuds.ninja",
+  "author": "tuds",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "2.1.1",
+    "normalize.css": "^4.2.0"
+  }
+}

@@ -1,0 +1,142 @@
+/*File reset css*/
+@import "node_modules/normalize.css/normalize";
+
+body {
+	background-color: #eee;
+	font-family: Arial;
+	font-size: 13px;
+}
+.post {
+	background-color: #fff;
+	margin: 30px auto 0px auto;
+	width: 600px;
+	&-header,
+	&-body,
+	&-footer {
+		padding: 10px;
+	}
+	&-header {
+		h3 {
+			margin: 0;
+		}
+	}
+	&-footer {
+		border-top: 1px solid #ddd;
+	}
+}
+
+.icon-hover {
+	color: #999;
+	font-weight: bold;
+	padding-left: 20px;
+	text-decoration: none;
+	position: relative;
+	/*background: green;*/
+	&:hover {
+		text-decoration: underline;
+	}
+	&:before {
+		content: "";
+		height: 14px;
+		width: 14px;
+		left: 0;
+		top: 0;
+		position: absolute;
+		display: inline-block;
+		background: url(https://www.facebook.com/rsrc.php/v2/ye/r/GdxcLgUK8jV.png) -379px -34px no-repeat;
+	}
+}
+
+.box-list-icons {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	border-radius: 52px;
+	top: -64px;
+	left: -20px;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	position: absolute;
+	&:after {
+		content: "";
+		height: 10px;
+		width: 294px;
+		left: 0;
+		bottom: -11px;
+		position: absolute;
+		display: inline-block;
+		/*background: green;*/
+	}
+	/*label*/
+	label {
+		display: none;
+		background: rgba(0,0,0,0.75);
+		white-space: nowrap;
+		padding: 3px 5px;
+		border-radius: 10px;
+		font-size: 10px;
+		position: absolute;
+		color: #fff;
+		top: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	[class*="icon"]:hover label {
+		display: block;
+	}
+	/*end label*/
+	[class*="icon"] {
+		display: inline-block;
+		background: #ddd url('https://www.facebook.com/rsrc.php/v2/yc/r/G7nmfrnwcuL.png') no-repeat;
+		background-size: 40px;
+		height: 40px;
+		width: 40px;
+		margin: 6px 0 6px 8px;
+		float: left;
+		border-radius: 50%;
+		transform: scale(0.01) translateY(200px);
+		transform-origin: bottom;
+		transition: transform 300ms;
+		transition-timing-function: cubic-bezier(0, 0, 0, 1.225);
+		opacity: 0;
+	}
+}
+.icon-hover:hover .box-list-icons {
+	/*display: block;*/
+	height: 52px;
+	width: 294px;
+	overflow: initial;
+	[class*="icon"] {
+		transform: scale(1) translateY(0);
+		opacity: 1;
+	}
+	.icon-phanno {
+		background-position: 0 0;
+		transition-duration: 600ms;
+	}
+	.icon-haha {
+		background-position: 0 -80px;
+		transition-duration: 450ms;
+	}
+	.icon-thich {
+		background-position: 0 -120px;
+		transition-duration: 350ms;
+	}
+	.icon-yeuthich {
+		background-position: 0 -160px;
+		transition-duration: 400ms;
+	}
+	.icon-buon {
+		background-position: 0 -200px;
+		transition-duration: 550ms;
+	}
+	.icon-wow {
+		background-position: 0 -240px;
+		transition-duration: 500ms;
+	}
+	[class*="icon"]:hover {
+		transform: scale(1.225);
+	}
+}
+
+
