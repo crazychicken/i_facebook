@@ -7,7 +7,7 @@
 * Install with npm: npm install crazychicken/i_facebook
 
 ## Demo
-http://project.tuds.ninja/i_facebook/
+http://project.tuds.ninja/i_facebook/dist/
 
 ## Template full feature list
 
