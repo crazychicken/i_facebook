@@ -4,7 +4,10 @@
 
 ## Quick start
 * Clone the repo: git clone git@github.com:crazychicken/i_facebook.git
-* Install with npm: npm install i_facebook
+* Install with npm: npm install crazychicken/i_facebook
+
+## Demo
+http://project.tuds.ninja/i_facebook/
 
 ## Template full feature list
 
